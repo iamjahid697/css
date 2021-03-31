@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before</title>
+    <style>
+        body{
+        counter-reset:name;
+    }
+    p::before{
+        counter-increment: name;
+        content: "Crush " counter(name)" :";
+    }
+    </style>
+</head>
+<body>
+    <p>name 1</p>
+    <p>name 2</p>
+    <p>name 3</p>
+    <p>name 4</p>
+    <p>name 5</p>
+    <p>name 6</p>
+    <p>name 7</p>
+    <p>name 8</p>
+    <p>name 9</p>
+    <p>name 10</p>
+</body>
+</html>
